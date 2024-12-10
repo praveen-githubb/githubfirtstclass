@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+	<head>
+		<title>HTML LEARNING</title>
+		<script>
+			function getIdData(){
+				let firstName = document.getElementById('fname');
+				let lastName = document.getElementById('lname');
+				let studentAge = parseInt(document.getElementById('sage').value); 
+				console.log("First Name : ",firstName," ","Last Name : ",lastName," ","Age : ",studentAge);
+				// First Name : ABC Last Name : D Age : 20
+			}
+		</script>
+	</head>
+	<body>
+		<fieldset>
+			<div>
+				<label>FIRST NAME : </label>
+				<input type="text" id="fname">
+			</div><br>
+			<div>
+				<label>LAST NAME : </label>
+				<input type="text" id="lname">
+			</div><br>
+			<div>
+				<label>AGE : </label>
+				<input type="number" id="sage">
+			</div><br>
+			<div>
+				<button onclick="getIdData()">GET ID DATA</button>
+			</div>
+		</fieldset>
+	</body>
+</html>
